@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นายวุฒิชัย โหนแหย็ม -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08-js-cal-number.html</title>
+</head>
+<body>
+    input number : <input type = "text" name="num1" id="num1"sysle="width : 50 px;">
+    <br>
+    input number : <input type = "text" name="num2" id="num2" sysle="width : 50 px;">
+    <br>
+    <br>
+    <button sysle="width : 30 px;" onclick="sum()">+</button>
+    <button sysle="width : 30 px;" onclick="minus()">-</button>
+    <button sysle="width : 30 px;" onclick="multiply()">*</button>
+    <button sysle="width : 30 px" onclick="devide()">/</button>
+    <br>
+    <br>
+    <!-- <p id="output"></t>Ans =</p> -->
+    Ans = <span id="output"></span>
+
+    <script>
+  
+        
+        let n1 = 0
+        let n2 = 0
+        let ans = 0
+        function start() {
+            n1 = Number(document.getElementById('num1').value)
+            n2 = Number(document.getElementById('num2').value)
+        }
+        function sum() {
+            start()
+          ans = n1+n2
+          document.getElementById('output').innerHTML = ans
+        }
+        function minus(params) {
+            start()
+          ans = n1-n2
+          document.getElementById('output').innerHTML = ans
+        }
+        function multiply(params) {
+            start()
+          ans = n1*n2
+          document.getElementById('output').innerHTML = ans
+        }
+        function devide(params) {
+            start()
+          ans = n1/n2
+          document.getElementById('output').innerHTML = ans
+        }
+    </script>
+</body>
+</html>
